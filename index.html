@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-name">
+        <p>WOO</p>
+        <p>LEN</p>
+      </div>
+      <div class="input-container">
+        <input required="" placeholder="Search..." type="email" />
+        <button class="invite-btn" type="button">
+          Search <i class="bx bx-search"></i>
+        </button>
+      </div>
+      <div class="button-list">
+        <div id="list-btn" class="sell-btn">Sell</div>
+        <div id="list-btn" class="app-btn">App</div>
+        <div id="icon-btn" class="heart-btn" style="margin-left: 20px">
+          <i class="bx bxs-heart"></i>
+        </div>
+        <div id="icon-btn" class="cart-btn">
+          <i class="bx bxs-cart-alt"></i>
+        </div>
+        <div class="profile-btn">I</div>
+      </div>
+    </header>
+    <nav>
+      <div class="categories-list">
+        <p>Categories</p>
+        <div class="items-list">
+          <div class="item">Sofa</div>
+          <div class="item">Table</div>
+          <div class="item">Dressers</div>
+          <div class="item">Chair</div>
+          <div class="item">bed</div>
+          <div class="item">Lamps</div>
+          <div class="item">Speakers</div>
+          <div class="item">Furnitures</div>
+        </div>
+      </div>
+    </nav>
+    <aside>
+      <div class="new-deals">
+        <p>New Deals</p>
+        <div class="carousel" data-carousel>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="image/1.png" />
+            </li>
+            <li class="slide">
+              <img src="image/2.png" />
+            </li>
+            <li class="slide">
+              <img src="image/3.png" />
+            </li>
+            <li class="slide">
+              <img src="image/1.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="slide-btn">
+          <button class="carousel-btn prev" data-carousel-button="prev">
+            <i class="bx bx-arrow-back"></i>
+          </button>
+          <button
+            class="carousel-btn next"
+            data-carousel-button="next"
+            style="rotate: 180deg"
+          >
+            <i class="bx bx-arrow-back"></i>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
