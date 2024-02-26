@@ -187,14 +187,14 @@ header .logo-name {
 .new-deals {
   height: 60vh;
   width: 20%;
-  background-color: #ffcf96;
+  background-color: #d3d1d1;
   margin: 0 2.6rem;
   border-radius: 1rem;
   position: relative;
 }
 
 .new-deals p {
-  padding: 1rem 1rem 0 1rem;
+  padding: 0.8rem 1rem 0rem 1rem;
 }
 
 .carousel ul {
@@ -222,11 +222,22 @@ header .logo-name {
   z-index: 1;
   transition-delay: 0ms;
 }
-
-.slide-btn {
+.carousel {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.43);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: auto;
+}
+.carousel .slide-btn {
   display: flex;
   position: relative;
-  top: 70%;
+  margin-top: 98%;
   background-color: #fff;
   height: 3rem;
   width: 100%;
@@ -253,4 +264,10 @@ header .logo-name {
   background-color: #000000;
   color: #fff;
   border: 2px solid var(--product2);
+}
+
+.slide p {
+  text-align: center;
+  justify-content: center;
+  line-height: 1px;
 }
