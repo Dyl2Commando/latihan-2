@@ -3,33 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>responsive Navigation Menu With Search Bar</title>
-    <link rel="stylesheet" href="style.css" />
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
   </head>
   <body>
-    <input type="checkbox" id="check" />
-    <nav>
-      <div class="icon">Design <b style="color: red"> P</b>ro</div>
-      <div class="search-box">
-        <input type="search" placeholder="Search Here" />
-        <span class="fa fa-search"></span>
+    <header>
+      <div class="logo-name">
+        <p>WOO</p>
+        <p>LEN</p>
       </div>
-      <ol>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Login</a></li>
-      </ol>
-      <label for="check" class="bar">
-        <span class="fa fa-bars" id="bars"></span>
-        <span class="fa fa-times" id="times"></span>
-      </label>
+      <div class="input-container">
+        <input required="" placeholder="Search..." type="email" />
+        <button class="invite-btn" type="button">
+          Search <i class="bx bx-search"></i>
+        </button>
+      </div>
+      <div class="button-list">
+        <div id="list-btn" class="sell-btn">Sell</div>
+        <div id="list-btn" class="app-btn">App</div>
+        <div id="icon-btn" class="heart-btn" style="margin-left: 20px">
+          <i class="bx bxs-heart"></i>
+        </div>
+        <div id="icon-btn" class="cart-btn">
+          <i class="bx bxs-cart-alt"></i>
+        </div>
+        <div class="profile-btn">I</div>
+      </div>
+    </header>
+    <nav>
+      <div class="categories-list">
+        <p>Categories</p>
+        <div class="items-list">
+          <div class="item">Sofa</div>
+          <div class="item">Table</div>
+          <div class="item">Dressers</div>
+          <div class="item">Chair</div>
+          <div class="item">bed</div>
+          <div class="item">Lamps</div>
+          <div class="item">Speakers</div>
+          <div class="item">Furnitures</div>
+        </div>
+      </div>
     </nav>
-    <section></section>
+    <aside>
+      <div class="new-deals">
+        <div class="card-contain">
+          <p>New Deals</p>
+        </div>
+        <div class="bg-img">
+          <img src="image/5.png" alt="" />
+        </div>
+        <div class="carousel" data-carousel>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="image/1.png" />
+              <p>Modern Sofa</p>
+            </li>
+            <li class="slide">
+              <img src="image/2.png" />
+              <p>Club Chair</p>
+            </li>
+            <li class="slide">
+              <img src="image/3.png" />
+              <p>Lounge Chair</p>
+            </li>
+            <li class="slide">
+              <img src="image/4.png" />
+              <p>Couch Chair</p>
+            </li>
+          </ul>
+
+          <!-- <div class="slide-btn">
+            <button class="carousel-btn prev" data-carousel-button="prev">
+              <i class="bx bx-arrow-back"></i>
+            </button>
+            <button
+              class="carousel-btn next"
+              data-carousel-button="next"
+              style="rotate: 180deg"
+            >
+              <i class="bx bx-arrow-back"></i>
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
   </body>
 </html>
