@@ -189,16 +189,23 @@ header .logo-name p {
 .new-deals {
   height: 60vh;
   width: 20%;
-  background-color: #d3d1d1;
+  background-color: #fff;
   margin: 0 2.6rem;
   border-radius: 1rem;
   position: relative;
 }
 
-.new-deals p {
+.new-deals .card-contain p {
   padding: 0.8rem 1rem 0rem 1rem;
+  border: 1px solid red;
 }
 
+.bg-img img {
+  width: 98%;
+  height: 80%;
+  position: absolute;
+  border-radius: 1rem;
+}
 .carousel ul {
   margin: 0;
   padding: 0;
@@ -226,8 +233,11 @@ header .logo-name p {
 }
 .carousel {
   position: absolute;
-  height: 90%;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 60%;
   background: rgba(255, 255, 255, 0.43);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
